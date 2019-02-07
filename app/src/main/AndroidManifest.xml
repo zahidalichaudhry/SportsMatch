@@ -29,6 +29,12 @@
         <activity android:name=".Activities.Downloads"></activity>
         <activity android:name=".Activities.Gernal_Activity"></activity>
         <activity android:name=".Activities.Watch_on_TV"></activity>
+        <activity android:name=".Activities.History_and_Privacy"></activity>
+        <activity android:name=".Activities.Notifications_Activity"></activity>
+        <activity android:name=".Activities.About_Activity"/>
+        <activity android:name=".Activities.Captions_Activity"/>
+        <activity android:name=".Activities.Connected_accounts"/>
+        <activity android:name=".Activities.Live_Chat"/>
     </application>
 
 </manifest>

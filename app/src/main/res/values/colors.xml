@@ -20,6 +20,7 @@
     <color name="greyshade">#dfdfdf</color>
     <color name="transparent">#00000000</color>
     <color name="default_green">#aed60d</color>
+    <color name="dark_green">#343A1B</color>
     <color name="backgroundcolor">#efefef</color>
     <color name="warning">#FFCC00</color>
     <color name="black">#000000</color>

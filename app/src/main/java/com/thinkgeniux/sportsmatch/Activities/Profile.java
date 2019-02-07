@@ -22,7 +22,7 @@ public class Profile extends AppCompatActivity {
     ArrayAdapter<CharSequence> arrayAdapter;
     ImageView img_cross;
     ArrayList<String>spinner_arrylist=new ArrayList<>();
-    ConstraintLayout cl_my_chanel,cl_settings;
+    ConstraintLayout cl_my_chanel,cl_settings,cl_time_watched,cl_paid,cl_switch,cl_turn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,6 +90,33 @@ public class Profile extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Profile.this,SettingActivity.class);
                 startActivity(intent);
+            }
+        });
+        cl_time_watched=(ConstraintLayout)findViewById(R.id.cl_time_watched);
+        cl_time_watched.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        cl_paid=(ConstraintLayout)findViewById(R.id.cl_paid);
+        cl_paid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        cl_switch=(ConstraintLayout)findViewById(R.id.cl_switch);
+        cl_switch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        cl_turn=(ConstraintLayout)findViewById(R.id.cl_turn_inc);
+        cl_turn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
             }
         });
     }

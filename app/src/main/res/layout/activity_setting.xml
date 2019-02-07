@@ -7,15 +7,24 @@
 
     <include
         android:id="@+id/include8"
-        layout="@layout/app_bar_just_title"></include>
+        layout="@layout/app_bar_just_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </include>
 
     <ScrollView
 
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include8">
 
@@ -100,6 +109,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/histry_privacy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -117,6 +127,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/paid_member"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -133,6 +144,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/notifications"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -149,6 +161,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/connected_TV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -165,6 +178,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/livechatTV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -181,6 +195,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/caption_TV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -197,6 +212,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/about"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"

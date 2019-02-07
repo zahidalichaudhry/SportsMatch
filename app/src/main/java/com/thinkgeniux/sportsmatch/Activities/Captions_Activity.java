@@ -6,13 +6,14 @@ import android.widget.TextView;
 
 import com.thinkgeniux.sportsmatch.R;
 
-public class Paid_Membership extends AppCompatActivity {
+public class Captions_Activity extends AppCompatActivity {
     TextView tv_title;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_paid__membership);
+        setContentView(R.layout.activity_captions_);
         tv_title=(TextView)findViewById(R.id.tv_title);
-        tv_title.setText("Paid Membership");
+        tv_title.setText("Captions");
+
     }
 }
