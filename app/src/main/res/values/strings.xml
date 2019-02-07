@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SportsMatch</string>
+    <string name="stories">Stories</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="spinnerdemo">
+        <item>Account Name </item>
+        <item>Accounts             +</item>
+        <item>fakharali054@gmail.com</item>
+
+    </string-array>
+    <string-array name="spinnerValues">
+        <item>Save to Watch later</item>
+        <item>Save to playlist</item>
+        <item>Delete</item>
+        <item>Edit</item>
+        <item>Download</item>
+        <item>Share</item>
+
+    </string-array>
+</resources>
