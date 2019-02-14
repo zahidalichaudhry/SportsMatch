@@ -96,20 +96,23 @@ public class Profile extends AppCompatActivity {
         cl_time_watched.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(Profile.this,Time_Watched.class);
+                startActivity(intent);
             }
         });
         cl_paid=(ConstraintLayout)findViewById(R.id.cl_paid);
         cl_paid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(Profile.this,Paid_Membership.class);
+                startActivity(intent);
             }
         });
         cl_switch=(ConstraintLayout)findViewById(R.id.cl_switch);
         cl_switch.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
 
             }
         });

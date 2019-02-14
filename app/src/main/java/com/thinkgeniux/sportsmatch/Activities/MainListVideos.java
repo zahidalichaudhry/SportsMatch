@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,6 +33,9 @@ public class MainListVideos extends AppCompatActivity {
     TextView tv_home,tv_trend,tv_sub;
     //String[] spinner_array=new String[5];
     ImageView img_top_video,img_search,img_profile;
+    ImageView search_app_bar;
+    EditText search_edit;
+    boolean search_show=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,13 +66,34 @@ public class MainListVideos extends AppCompatActivity {
     private void iniTopview()
     {
         img_top_video=(ImageView)findViewById(R.id.img_top_video);
-        img_search=(ImageView)findViewById(R.id.search_ap_bar);
+       // img_search=(ImageView)findViewById(R.id.search_ap_bar);
         img_profile=(ImageView)findViewById(R.id.img_profile);
         img_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainListVideos.this,Profile.class);
                 startActivity(intent);
+            }
+        });
+        search_edit=(EditText)findViewById(R.id.search_edit);
+        search_edit.setVisibility(View.GONE);
+        search_app_bar=(ImageView)findViewById(R.id.search_ap_bar);
+        search_app_bar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!search_show){
+                    search_edit.setVisibility(View.VISIBLE);
+                    search_show=true;
+                }else if (search_edit.getText().length()==0)
+                {
+                    search_edit.setVisibility(View.GONE);
+                    search_show=false;
+                }else
+                {
+                    //search_activity_start();
+                    search_edit.setVisibility(View.GONE);
+                    search_show=false;
+                }
             }
         });
     }
@@ -158,6 +183,5 @@ public class MainListVideos extends AppCompatActivity {
         horizental_reycler.setHasFixedSize(true);
         Stories_Adapter_horizontal horizontal_adapter=new Stories_Adapter_horizontal(arrylist_stroies,MainListVideos.this);
         horizental_reycler.setAdapter(horizontal_adapter);
-
     }
 }

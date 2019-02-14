@@ -14,5 +14,6 @@ public class Notifications_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_notifications);
         tv_title=(TextView)findViewById(R.id.tv_title);
         tv_title.setText("Notifications");
+
     }
 }
